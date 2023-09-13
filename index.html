@@ -8,6 +8,8 @@
     <!-- Tailwind & DaisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Aewsome -->
+    <script src="https://kit.fontawesome.com/be9470a7cd.js" crossorigin="anonymous"></script>
     <!-- EB Garamond Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,16 +30,16 @@
         }
     </script>
     <style>
-        .font-garamond {
+        *{
             font-family: 'EB Garamond', serif;
         }
     </style>
 </head>
 
-<body class="font-garamond">
-    <header class="container mx-auto">
+<body>
+    <header class="max-w-screen-xl mx-auto p-5 md:p-8">
         <!-- Navbar -->
-        <div class="navbar py-12  bg-base-100">
+        <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -74,18 +76,18 @@
             </div>
         </div>
         <!-- Banner section -->
-        <section class="">
-            <div class="hero min-h-[550px] min-w-[1170px] bg-no-repeat"
+        <section class="py-8">
+            <div class="hero  min-h-[190px] md:min-h-[600px] bg-no-repeat"
                 style="background-image: url('images/banner.png');">
-                <div class=" bg-opacity-60"></div>
+                <div class="hero-overlay bg-opacity-30"></div>
                 <div class="hero-content text-center text-neutral-content">
-                    <div class="w-[680px]">
-                        <h1 class="mb-5 text-7xl font-extrabold text-[#FFF]">We Provide Effective Legal Solutions</h1>
-                        <p class="mb-5 text-[#E7E7E7] text-base">There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <div class="form-control">
-                            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                            <button class="btn btn-primary">Get Started</button>
+                    <div class="w-auto md:w-[680px]">
+                        <h1 class="mb-5 text-2xl md:text-7xl font-extrabold text-[#FFF]">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 text-[#E7E7E7] text-base font-medium">There are many variations of passages of Lorem Ipsum
+                            available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                        <div class="form-control items-center flex gap-5 flex-col md:flex-row">
+                            <input type="text" placeholder="Search" class="input input-bordered rounded-lg text-black w-auto md:w-3/4" />
+                            <button class="btn bg-btn-primary-bg text-white text-xl font-semibold normal-case border-none">Search</button>
                         </div>
                         
                     </div>
@@ -93,8 +95,105 @@
             </div>
         </section>
     </header>
-    <main>
-
+    <main class="max-w-screen-xl mx-auto p-5 md:p-8">
+        <!-- The Legal Practice Area section -->
+        <section class="text-center">
+            <h2 class="text-5xl font-extrabold mb-5">The Legal Practice Area</h2>
+            <p class="text-color text-lg font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.s</p>
+            <!-- card container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16">
+                <!-- 1st card -->
+                <div class="card bg-base-100 hover:bg-gradient-to-r from-[#F3F3F3] to-[#F0F0F0] border-[#E7E7E7] lg:border-r-2 lg:border-b-2">
+                    <figure class="px-10 pt-10">
+                      <img src="images/business.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-8">
+                      <h2 class="card-title text-3xl font-extrabold">Business Law</h2>
+                      <p class="text-base font-medium ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions pb-6">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#b68c5a}</style><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="card bg-base-100 hover:bg-gradient-to-r from-[#F3F3F3] to-[#F0F0F0] border-[#E7E7E7] lg:border-r-2 lg:border-b-2">
+                    <figure class="px-10 pt-10">
+                      <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-8">
+                      <h2 class="card-title text-3xl font-extrabold">Criminal Law</h2>
+                      <p class="text-base font-medium ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions pb-6">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#b68c5a}</style><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="card bg-base-100 hover:bg-gradient-to-r from-[#F3F3F3] to-[#F0F0F0] border-[#E7E7E7] lg:border-b-2">
+                    <figure class="px-10 pt-10">
+                      <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-8">
+                      <h2 class="card-title text-3xl font-extrabold">Child Support</h2>
+                      <p class="text-base font-medium ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions pb-6">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#b68c5a}</style><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="card bg-base-100 hover:bg-gradient-to-r from-[#F3F3F3] to-[#F0F0F0] border-[#E7E7E7] lg:border-r-2">
+                    <figure class="px-10 pt-10">
+                      <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-8">
+                      <h2 class="card-title text-3xl font-extrabold">Education Law</h2>
+                      <p class="text-base font-medium ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions pb-6">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#b68c5a}</style><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <!-- 5th card -->
+                <div class="card bg-base-100 hover:bg-gradient-to-r from-[#F3F3F3] to-[#F0F0F0] border-[#E7E7E7] ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-8">
+                      <h2 class="card-title text-3xl font-extrabold">Divorce Law</h2>
+                      <p class="text-base font-medium ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions pb-6">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#b68c5a}</style><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <!-- 6th card -->
+                <div class="card bg-base-100 hover:bg-gradient-to-r from-[#F3F3F3] to-[#F0F0F0] border-[#E7E7E7] lg:border-l-2">
+                    <figure class="px-10 pt-10">
+                      <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-8">
+                      <h2 class="card-title text-3xl font-extrabold">Tax Law</h2>
+                      <p class="text-base font-medium ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions pb-6">
+                        <button class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#b68c5a}</style><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
